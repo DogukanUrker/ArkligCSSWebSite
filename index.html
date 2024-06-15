@@ -5,11 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ArkligCSS</title>
   </head>
+
   <body>
     <header>
       <h1>ArkligCSS Elements</h1>
+      <label>Theme:</label>
+      <select id="theme">
+        <option value="auto">Auto</option>
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+      </select>
+      <label>Color Variant:</label>
+      <select id="color">
+        <option value="default">Default</option>
+        <option value="Amber">Amber</option>
+        <option value="Blue">Blue</option>
+        <option value="Cyan">Cyan</option>
+        <option value="Emerald">Emerald</option>
+        <option value="Fuchsia">Fuchsia</option>
+        <option value="Gray">Gray</option>
+        <option value="Green">Green</option>
+        <option value="Indigo">Indigo</option>
+        <option value="Lime">Lime</option>
+        <option value="Rose">Rose</option>
+        <option value="Neutral">Neutral</option>
+        <option value="Orange">Orange</option>
+        <option value="Pink">Pink</option>
+        <option value="Purple">Purple</option>
+        <option value="Red">Red</option>
+        <option value="Rose">Rose</option>
+        <option value="Sky">Sky</option>
+        <option value="Slate">Slate</option>
+        <option value="Stone">Stone</option>
+        <option value="Teal">Teal</option>
+        <option value="Violet">Violet</option>
+        <option value="Yellow">Yellow</option>
+        <option value="Zinc">Zinc</option>
+      </select>
     </header>
-
+    <br />
     <nav>
       <a href="#text-elements">Text</a><br />
       <a href="#list-elements">Lists</a><br />
@@ -147,17 +181,26 @@
 
       <section id="media-elements">
         <h2>Media Elements</h2>
-        <img src="https://via.placeholder.com/300" alt="Placeholder Image" />
+        <img
+          src="static/placeholder.jpg"
+          alt="Placeholder Image"
+          width="300px"
+        />
         <figure>
-          <img src="https://via.placeholder.com/300" alt="Placeholder Image" />
+          <img
+            src="static/placeholder.jpg"
+            alt="Placeholder Image"
+            width="300px"
+          />
           <figcaption>Figure Caption</figcaption>
         </figure>
         <audio controls>
-          <source src="audio_sample.mp3" type="audio/mpeg" />
+          <source src="static/placeholder.mp3" type="audio/mpeg" />
           Your browser does not support the audio element.
         </audio>
-        <video controls width="250">
-          <source src="video_sample.mp4" type="video/mp4" />
+        <br />
+        <video controls width="500">
+          <source src="static/placeholder.mp4" type="video/mp4" />
           Your browser does not support the video element.
         </video>
       </section>
