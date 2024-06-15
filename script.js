@@ -1,3 +1,19 @@
+const prefersDarkMode = window.matchMedia(
+  "(prefers-color-scheme: dark)"
+).matches;
+
+if (prefersDarkMode) {
+  document.documentElement.style.colorScheme = "dark";
+  document
+    .querySelector('meta[name="theme-color"]')
+    .setAttribute("content", "#0F0F0F");
+} else {
+  document.documentElement.style.colorScheme = "light";
+  document
+    .querySelector('meta[name="theme-color"]')
+    .setAttribute("content", "#FAFAFA");
+}
+
 const link = document.createElement("link");
 link.rel = "stylesheet";
 link.href =
