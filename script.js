@@ -26,7 +26,13 @@ selectColorScheme.addEventListener("change", function () {
     document.documentElement.style.colorScheme = "light dark";
   } else if (selectedValue === "light") {
     document.documentElement.style.colorScheme = "light";
+    document
+      .querySelector('meta[name="theme-color"]')
+      .setAttribute("content", "#FAFAFA");
   } else if (selectedValue === "dark") {
     document.documentElement.style.colorScheme = "dark";
+    document
+      .querySelector('meta[name="theme-color"]')
+      .setAttribute("content", "#0F0F0F");
   }
 });
