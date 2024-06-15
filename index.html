@@ -4,14 +4,197 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ArkligCSS</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/DogukanUrker/ArkligCSS@main/ArkligMin/Arklig.min.css"
-    />
   </head>
   <body>
-    <h1>ArkligCSS</h1>
+    <header>
+      <h1>ArkligCSS Elements</h1>
+    </header>
+
+    <nav>
+      <a href="#text-elements">Text</a><br />
+      <a href="#list-elements">Lists</a><br />
+      <a href="#table-elements">Tables</a><br />
+      <a href="#form-elements">Forms</a><br />
+      <a href="#media-elements">Media</a><br />
+      <a href="#interactive-elements">Interactive</a><br />
+      <a href="#misc-elements">Miscellaneous</a>
+    </nav>
+
+    <main>
+      <section id="text-elements">
+        <h2>Text Elements</h2>
+        <p>
+          This is a paragraph. <strong>This text is strong.</strong>
+          <em>This text is emphasized.</em>
+        </p>
+        <blockquote>This is a blockquote.</blockquote>
+        <p><a href="#">This is a link</a></p>
+        <p>
+          Here is a <abbr title="Abbreviation">abbr</abbr> and here is a
+          <cite>Citation</cite>.
+        </p>
+        <code>This is some inline code.</code>
+        <pre>
+            This is a code block
+            with multiple lines.
+        </pre>
+        <p>
+          This is a subscript<sub>sub</sub> and this is a
+          superscript<sup>sup</sup>.
+        </p>
+        <p>
+          This is <del>deleted</del> text and this is <ins>inserted</ins> text.
+        </p>
+        <div>This is an alert box.</div>
+        <div>This is a success message.</div>
+      </section>
+
+      <section id="list-elements">
+        <h2>List Elements</h2>
+        <ul>
+          <li>Unordered List Item 1</li>
+          <li>Unordered List Item 2</li>
+          <li>Unordered List Item 3</li>
+        </ul>
+        <ol>
+          <li>Ordered List Item 1</li>
+          <li>Ordered List Item 2</li>
+          <li>Ordered List Item 3</li>
+        </ol>
+        <dl>
+          <dt>Definition Term 1</dt>
+          <dd>Definition Description 1</dd>
+          <dt>Definition Term 2</dt>
+          <dd>Definition Description 2</dd>
+        </dl>
+      </section>
+
+      <section id="table-elements">
+        <h2>Table Elements</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Header 1</th>
+              <th>Header 2</th>
+              <th>Header 3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Row 1, Cell 1</td>
+              <td>Row 1, Cell 2</td>
+              <td>Row 1, Cell 3</td>
+            </tr>
+            <tr>
+              <td>Row 2, Cell 1</td>
+              <td>Row 2, Cell 2</td>
+              <td>Row 2, Cell 3</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="form-elements">
+        <h2>Form Elements</h2>
+        <form action="#">
+          <label>Text Input:</label>
+          <input type="text" /><br /><br />
+
+          <label>Email Input:</label>
+          <input type="email" /><br /><br />
+
+          <label>Password Input:</label>
+          <input type="password" /><br /><br />
+
+          <label>Textarea:</label>
+          <textarea></textarea><br /><br />
+
+          <label>Select:</label>
+          <select>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option></select
+          ><br /><br />
+
+          <label>Radio Buttons:</label>
+          <input type="radio" name="radio" />
+          <label>Radio 1</label>
+          <input type="radio" name="radio" />
+          <label>Radio 2</label><br /><br />
+
+          <label>Checkboxes:</label>
+          <input type="checkbox" />
+          <label>Checkbox 1</label>
+          <input type="checkbox" />
+          <label>Checkbox 2</label><br /><br />
+
+          <label>Date Input:</label>
+          <input type="date" /><br /><br />
+
+          <label>Color Input:</label>
+          <input type="color" /><br /><br />
+
+          <label>Range Input:</label>
+          <input type="range" /><br /><br />
+
+          <label>File Input:</label>
+          <input type="file" /><br /><br />
+
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </form>
+      </section>
+
+      <section id="media-elements">
+        <h2>Media Elements</h2>
+        <img src="https://via.placeholder.com/300" alt="Placeholder Image" />
+        <figure>
+          <img src="https://via.placeholder.com/300" alt="Placeholder Image" />
+          <figcaption>Figure Caption</figcaption>
+        </figure>
+        <audio controls>
+          <source src="audio_sample.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+        <video controls width="250">
+          <source src="video_sample.mp4" type="video/mp4" />
+          Your browser does not support the video element.
+        </video>
+      </section>
+
+      <section id="interactive-elements">
+        <h2>Interactive Elements</h2>
+        <details>
+          <summary>Details Summary</summary>
+          <p>This is the details content.</p>
+        </details>
+        <br />
+        <progress value="70" max="100">70%</progress>
+        <br />
+        <meter value="0.7">70%</meter>
+      </section>
+
+      <section id="misc-elements">
+        <h2>Miscellaneous Elements</h2>
+        <address>
+          Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br />
+          Visit us at:<br />
+          Example.com<br />
+          Box 564, Disneyland<br />
+          USA
+        </address>
+        <time datetime="2024-03-18">March 18, 2024</time>
+        <hr />
+        <mark>This text is marked.</mark>
+        <kbd>Ctrl + S</kbd>
+        <samp>Sample Output</samp>
+        <var>x</var> = <var>y</var> + 2
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 ArkligCSS</p>
+    </footer>
+    <script src="script.js"></script>
   </body>
-  <script src="script.js"></script>
 </html>
