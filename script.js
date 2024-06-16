@@ -17,7 +17,7 @@ if (prefersDarkMode) {
 const link = document.createElement("link");
 link.rel = "stylesheet";
 link.href =
-  "https://cdn.jsdelivr.net/gh/DogukanUrker/ArkligCSS@main/ArkligMin/Arklig.min.css";
+  "https://cdn.jsdelivr.net/gh/DogukanUrker/ArkligCSS@v1.0.0/ArkligMin/Arklig.min.css";
 document.head.appendChild(link);
 
 const selectElement = document.getElementById("color");
@@ -25,12 +25,12 @@ selectElement.addEventListener("change", function () {
   const selectedValue = selectElement.value;
   if (selectedValue != "default") {
     link.rel = "stylesheet";
-    link.href = `https://cdn.jsdelivr.net/gh/DogukanUrker/ArkligCSS@main/ArkligMin/Arklig.${selectedValue}.min.css`;
+    link.href = `https://cdn.jsdelivr.net/gh/DogukanUrker/ArkligCSS@v1.0.0/ArkligMin/Arklig.${selectedValue}.min.css`;
     document.head.appendChild(link);
   } else {
     link.rel = "stylesheet";
     link.href =
-      "https://cdn.jsdelivr.net/gh/DogukanUrker/ArkligCSS@main/ArkligMin/Arklig.min.css";
+      "https://cdn.jsdelivr.net/gh/DogukanUrker/ArkligCSS@v1.0.0/ArkligMin/Arklig.min.css";
     document.head.appendChild(link);
   }
 });
