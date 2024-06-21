@@ -1,3 +1,12 @@
 html {
   font-size: 1.5rem;
 }
+
+#file {
+  width: 100%;
+}
+
+code,
+pre {
+  text-align: left;
+}
